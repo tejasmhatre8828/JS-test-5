@@ -138,7 +138,29 @@ var nums = [
 //     [4, 5, 6]
 // ]
 
+// let searchInMatrix = (matrix, target) => {
+//   let targetFound = false;
 
+//   for (let row = 0; row < matrix.length; row++) {
+//     for (let col = 0; col < matrix[row].length; col++) {
+//       if (matrix[row][col] == target) {
+//         targetFound = true;
+//       }
+//     }
+//   }
+
+//   return targetFound;
+// };
+
+// console.log(
+//   searchInMatrix(
+//     [
+//       [1, 2, 3],
+//       [4, 5, 6],
+//     ],
+//     5
+//   )
+// );
 
 
 
@@ -175,6 +197,29 @@ var nums = [
 //     [0, 0, 1]
 // ]
 
+// let countZerosAndOnes = (input) => {
+//   let obj = { zero: 0, one: 0 };
+
+//   for (let i = 0; i < input.length; i++) {
+//     for (let j = 0; j < input[0].length; j++) {
+//       if (input[i][j] == 0) {
+//         obj.zero++;
+//       } else if (input[i][j] == 1) {
+//         obj.one++;
+//       }
+//     }
+//   }
+
+//   return obj;
+// };
+
+// console.log(
+//   countZerosAndOnes([
+//     [1, 0, 1],
+//     [1, 1, 0],
+//     [0, 0, 1],
+//   ])
+// );
 
 
 
@@ -211,7 +256,29 @@ var nums = [
 //     [1, 8, 3]
 // ]
 
+// let greaterThanThreshold = (input, k) => {
+//   let count = 0;
 
+//   for (let row = 0; row < input.length; row++) {
+//     for (let col = 0; col < input[row].length; col++) {
+//       if (input[row][col] > k) {
+//         count++;
+//       }
+//     }
+//   }
+
+//   return count;
+// };
+
+// console.log(
+//   greaterThanThreshold(
+//     [
+//       [2, 5, 7],
+//       [1, 8, 3],
+//     ],
+//     5
+//   )
+// );
 
 
 
