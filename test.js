@@ -63,36 +63,51 @@
 
 // //     Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
 
-var Input2 = [
+var nums = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ]
 
-let left2 = 0;
-let right2 = Input2[0].length - 1;
-let top2 = 0;
-let bottom2 = Input2.length - 1;
 
-const result2 = [];
+// let left = 0;
+// let right = nums[0].length - 1;
+// let top = 0;
+// let bottom = nums.length - 1;
 
-// for (let i = left2; i <= right2; i++) {
-//     console.log(Input2[top2][i]);
-//     result2.push(Input2[top2][i]);
+// const result=[];
+
+// while (left <= right && top <= bottom) {
+
+//     for (let i = left; i <= right; i++) {
+//         console.log(nums[top][i]);
+//         result.push(nums[top][i]);
+//     }
+//     top++;
+
+//     for (let i = top; i <= bottom; i++) {
+//         console.log(nums[i][right]);
+//         result.push(nums[i][right]);
+//     }
+//     right--;
+
+//     if (top <= bottom) {
+//         for (let i = right; i >= left; i--) {
+//             console.log(nums[bottom][i]);
+//             result.push(nums[bottom][i]);
+//         }
+//         bottom--;
+
+//     }
+//     if (left <= right) {
+//         for (let i = bottom; i >= top; i--) {
+//             console.log(nums[i][left]);
+//             result.push(nums[i][left]);
+//         }
+//         left++;
+//     }
 // }
-// top2++;
-// for (let i = top2; i <= bottom2; i++) {
-//     console.log(Input2[i][right2]);
-//     result2.push(Input2[i][right2]);
-// }
-// right2--;
-
-for (let i = right2; i <= left2; i++) {
-    console.log(Input2[bottom2][i]);
-    result2.push(Input2[bottom2][i]);
-}
-
-console.log("[", result2.join(", "), "]", "result")
+// console.log("[",result.join(" "),"]", "result")
 
 
 
