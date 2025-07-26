@@ -49,27 +49,9 @@
 //     [7, 8, 9]
 // ]
 
-// let left1 = 0;
-// let right1 = Input1[0].length - 1;
-// let top1 = 0;
-// let bottom1 = Input1.length - 1;
-
-// const result1 = []
-
-// for (let i = left1; i <= right1 - 1; i++) {
-//     // var addition = left1 + ((top1 + 1) + right1 - 1)
-//     console.log(left1)
-
-// }
-
-
-// console.log(left1)
-// console.log(top1)
-// console.log(addition)
 
 
 
-// // console.log(result.join(" "), "result")
 
 
 
