@@ -49,7 +49,19 @@
 //     [7, 8, 9]
 // ]
 
+// let n = Input1.length;
+// let sum = 0;
 
+// for (let i = 0; i < n; i++) {
+//     sum += Input1[i][i];
+//     sum += Input1[i][n - 1 - i];
+// }
+
+// if (n % 2 === 1) {
+//     sum -= Input1[Math.floor(n / 2)][Math.floor(n / 2)];
+// }
+
+// console.log("Sum of both diagonals:", sum);
 
 
 
@@ -63,11 +75,11 @@
 
 // //     Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
 
-var nums = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+// var nums = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ]
 
 
 // let left = 0;
@@ -107,20 +119,7 @@ var nums = [
 //         left++;
 //     }
 // }
-// console.log("[",result.join(" "),"]", "result")
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log("[",result.join(", "),"]", "result")
 
 
 
@@ -132,7 +131,7 @@ var nums = [
 // // Output: true
 
 
-// var Input3 = matrix + target = 5
+// var Input3 = //matrix + target = 5
 // [
 //     [1, 2, 3],
 //     [4, 5, 6]
@@ -181,6 +180,20 @@ var nums = [
 //     ]
 
 
+// function rotateMatrix90Clockwise(matrix) {
+//     const n = matrix.length;
+//     for (let i = 0; i < n; i++) {
+//         for (let j = i; j < n; j++) {
+//             [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];
+//         }
+//     }
+//     for (let i = 0; i < n; i++) {
+//         matrix[i].reverse();
+//     }
+//     return matrix;
+// }
+
+// console.log(rotateMatrix90Clockwise(Input4));
 
 
 
@@ -250,18 +263,18 @@ var nums = [
 // // Output: 2 (7 and 8)
 
 
-// var Input7 = matrix + k = 5
+// var Input7 = //matrix + k = 5
 // [
 //     [2, 5, 7],
 //     [1, 8, 3]
 // ]
 
-// let greaterThanThreshold = (input, k) => {
+// let greaterThanThreshold = (input7, k) => {
 //   let count = 0;
 
-//   for (let row = 0; row < input.length; row++) {
-//     for (let col = 0; col < input[row].length; col++) {
-//       if (input[row][col] > k) {
+//   for (let row = 0; row < input7.length; row++) {
+//     for (let col = 0; col < input7[row].length; col++) {
+//       if (input7[row][col] > k) {
 //         count++;
 //       }
 //     }
@@ -282,4 +295,62 @@ var nums = [
 
 
 
+
+// 9. Find Row with Maximum Sum 
+// Description: Return the row which has the highest sum of elements. 
+// Output: [4, 5, 6]
+
+
+var Input8 =
+    [
+        [1, 2, 3],
+        [4, 5, 6],
+        [0, 1, 1]
+    ]
+
+
+// 10. Boundary Elements of a Matrix 
+// Description: Print all boundary (outer layer) elements of a matrix. 
+// Output: [1, 2, 3, 6, 9, 8, 7, 4]
+
+var Input9 =
+    [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+
+
+
+let left9 = 0;
+let right9 = Input9[0].length - 1;
+let top9 = 0;
+let bottom9 = Input9.length - 1;
+
+const result9 = [];
+
+
+for (let i = left9; i <= right9; i++) {
+    console.log(Input9[top9][i]);
+    result9.push(Input9[top9][i]);
+}
+top9++;
+
+for (let i = top9; i <= bottom9; i++) {
+    console.log(Input9[i][right9]);
+    result9.push(Input9[i][right9]);
+}
+right9--;
+for (let i = right9; i >= left9; i--) {
+    console.log(Input9[bottom9][i]);
+    result9.push(Input9[bottom9][i]);
+}
+bottom9--;
+
+for (let i = bottom9; i >= top9; i--) {
+    console.log(Input9[i][left9]);
+    result9.push(Input9[i][left9]);
+}
+
+console.log("[", result9.join(", "), "]", "result")
 
